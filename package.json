@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
-    "build": "next build && npm run generate-sitemap && next export",
-    "generate-sitemap": "next-sitemap --config sitemap.config.js",
+    "build": "next build && next export",
+    "postbuild": "next-sitemap --config sitemap.config.js",
     "export": "next export",
     "start": "next start"
   },
