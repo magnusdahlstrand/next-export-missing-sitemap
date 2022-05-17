@@ -14,4 +14,6 @@ The problem arises because the npm build command runs next export which would co
 
 **Solution**
 The solution is to set the outDir configuration property in sitemap.config.js to `out`, which is where `next export` puts its content.
-Alternatively, rename `postbuild` to `generate-sitemap` and update the npm build command to `next build && npm run generate-sitemap && next export`.
+Alternatively, but crucially not both, rename `postbuild` to `generate-sitemap` and update the npm build command to `next build && npm run generate-sitemap && next export`.
+
+Why not both? If running `generate-sitemap` before export, the export command will clear the `out` directory which already contains the built sitemap. Therefore, use only one of the solutions.
