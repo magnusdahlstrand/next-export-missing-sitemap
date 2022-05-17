@@ -1,0 +1,25 @@
+{
+  "name": "next-export-missing-sitemap",
+  "version": "0.0.1-dev",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build && next export",
+    "postbuild": "next-sitemap --config sitemap.config.js",
+    "export": "next export",
+    "start": "next start"
+  },
+  "license": "PUBLIC DOMAIN",
+  "engines": {
+    "node": ">=16"
+  },
+  "dependencies": {
+    "next": "^12.1.5",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "next-sitemap": "^2.5.20"
+  }
+}
