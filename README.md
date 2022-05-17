@@ -2,6 +2,8 @@ This repository highlights an issue combining next-sitemap with next export when
 
 [See the thread which prompted this repo](https://community.cloudflare.com/t/sitemap-not-available-through-cloudflare-pages/384330)
 
+**Working example in the [working branch](https://github.com/magnusdahlstrand/next-export-missing-sitemap/tree/working)**
+
 **Setup**
 next-sitemap@2.5.20, outputs its sitemap to the public directory.
 I followed the [next documentation for export](https://nextjs.org/docs/advanced-features/static-html-export#next-export) and have set my npm build script to `next build && next export`.
